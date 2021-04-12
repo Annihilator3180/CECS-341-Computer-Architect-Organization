@@ -1,0 +1,54 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ERROR: Illegal hex digit '#' found in data of file "imem.dat"
+t= 630.0 ns  rf[0]:  00000000
+t= 650.0 ns  rf[1]:  xxxxxxxx
+t= 670.0 ns  rf[2]:  xxxxxxxx
+t= 690.0 ns  rf[3]:  xxxxxxxx
+t= 710.0 ns  rf[4]:  xxxxxxxx
+t= 730.0 ns  rf[5]:  xxxxxxxx
+t= 750.0 ns  rf[6]:  xxxxxxxx
+t= 770.0 ns  rf[7]:  xxxxxxxx
+t= 790.0 ns  rf[8]:  00000000
+t= 810.0 ns  rf[9]:  xxxxxxxx
+t= 830.0 ns  rf[10]:  xxxxxxxx
+t= 850.0 ns  rf[11]:  xxxxxxxx
+t= 870.0 ns  rf[12]:  xxxxxxxx
+t= 890.0 ns  rf[13]:  xxxxxxxx
+t= 910.0 ns  rf[14]:  xxxxxxxx
+t= 930.0 ns  rf[15]:  xxxxxxxx
+t= 950.0 ns  rf[16]:  xxxxxxxx
+t= 970.0 ns  rf[17]:  xxxxxxxx
+t= 990.0 ns  rf[18]:  xxxxxxxx
+t=1010.0 ns  rf[19]:  xxxxxxxx
+t=1030.0 ns  rf[20]:  xxxxxxxx
+t=1050.0 ns  rf[21]:  xxxxxxxx
+t=1070.0 ns  rf[22]:  xxxxxxxx
+t=1090.0 ns  rf[23]:  xxxxxxxx
+t=1110.0 ns  rf[24]:  xxxxxxxx
+t=1130.0 ns  rf[25]:  xxxxxxxx
+t=1150.0 ns  rf[26]:  xxxxxxxx
+t=1170.0 ns  rf[27]:  xxxxxxxx
+t=1190.0 ns  rf[28]:  xxxxxxxx
+t=1210.0 ns  rf[29]:  xxxxxxxx
+t=1230.0 ns  rf[30]:  xxxxxxxx
+t=1250.0 ns  rf[31]:  xxxxxxxx
+ 
+********************************************************************************************
+ C E C S  3 4 1  L A B  6  T E S T B E N C H 
+********************************************************************************************
+ 
+Initial Values:
+t = 1270.0 ns DataAddress = [0]: 00000001
+t = 1290.0 ns DataAddress = [4]: 00000002
+t = 1310.0 ns DataAddress = [8]: 00000003
+t = 1330.0 ns DataAddress = [12]: 00000004
+t = 1350.0 ns DataAddress = [16]: 00000005
+ 
+Final Values:
+t = 1370.0 ns DataAddress = [20]: xxxxxxxx
+t = 1390.0 ns DataAddress = [24]: xxxxxxxx
+t = 1410.0 ns DataAddress = [28]: xxxxxxxx
+t = 1430.0 ns DataAddress = [32]: xxxxxxxx
+t = 1450.0 ns DataAddress = [36]: xxxxxxxx
+$finish called at time : 1450 ns : File "C:/Users/Kawaii/lab6/lab6.srcs/sim_1/imports/new/Datapath_tb.v" Line 112
