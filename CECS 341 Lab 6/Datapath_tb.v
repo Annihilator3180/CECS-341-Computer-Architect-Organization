@@ -68,7 +68,7 @@ module Datapath_tb();
             end
         $display(" ");     
         $display("Final Values:");
-        for(i = 20; i < 33; i = i + 4) begin
+        for(i = 20; i < 35; i = i + 4) begin
             @(posedge clock)
             $display("t = %t DataAddress = [%0d]: %h%h%h%h", $time, i, uut.dm.dmem[i], uut.dm.dmem[i + 1], uut.dm.dmem[i + 2], uut.dm.dmem[i + 3]);
             end
