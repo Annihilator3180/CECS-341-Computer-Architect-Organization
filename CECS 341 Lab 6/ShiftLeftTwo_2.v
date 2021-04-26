@@ -21,11 +21,11 @@
 
 //fix code
 
-module ShiftLeftTwo_2(
-    input [25:0] Inst, 
-    output [31:0] jumpAddr
-);
+//module ShiftLeftTwo_2(
+//    input [25:0] Inst, 
+//    output [31:0] JISL
+//);
 
-    assign jumpAddr = Inst << 2;
+//    assign JISL = Inst << 2; //little circle thing
 
-endmodule
+//endmodule

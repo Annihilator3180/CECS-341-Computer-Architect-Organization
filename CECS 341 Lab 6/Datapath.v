@@ -52,17 +52,23 @@ module Datapath(
     assign PC_Out_Mux = ALUSrc ? sign_OUT : T;
     
     // WIRE FOR LAB 6
-    wire [31:0] jumpAddr;
+    wire [31:0] jumpAddr; 
+
     wire jump;
+    wire [25:0] JISL ;
     
     // MUX FOR LAB 6
     wire [31:0] Jump_Mux;
     
      // ASSIGN NEW WIRE FROM LAB 6
-    assign jumpAddr = {PC_Add_Out[31:28], Inst[25:0] << 2, 2'b0};
+    assign JISL = Inst [25:0] << 2;
+    assign jumpAddr = {PC_Add_Out[31:28], JISL, 2'b0};  
+
+   
     
     // NEW MUX FROM LAB 6
-    assign Jump_Mux = (jump) ? jumpAddr : Branch_Mux;
+    assign Jump_Mux = (jump == 1) ? jumpAddr : Branch_Mux; 
+
     
     PC pc (
           .Din(Jump_Mux),
@@ -146,9 +152,10 @@ module Datapath(
     );    
     
     
-    ShiftLeftTwo_2 sl3(
-                .Inst(Inst[25:0]),
-                .jumpAddr(jumpAddr)
+//    ShiftLeftTwo_2 sl3(
+//                .Inst(Inst[25:0]),
+//                .JISL(JISL) //little circle thing
+
                 
-    );            
+//    );            
 endmodule        

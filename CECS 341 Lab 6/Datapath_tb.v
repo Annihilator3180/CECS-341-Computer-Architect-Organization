@@ -43,17 +43,18 @@ module Datapath_tb();
      always
         #10 clock = ~clock;
              
-     task Dump_RegFile; begin
-        $timeformat(-9,1, " ns", 9);
-        for(i=0; i<32; i=i+1) begin
-            @(posedge clock)
-            $display("t=%t  rf[%0d]:  %h",
-                      $time, i, uut.rf.regArray[i]);
-        end   
-     end
-     endtask
+//     task Dump_RegFile; begin
+//        $timeformat(-9,1, " ns", 9);
+//        for(i=0; i<32; i=i+1) begin
+//            @(posedge clock)
+//            $display("t=%t  rf[%0d]:  %h",
+//                      $time, i, uut.rf.regArray[i]);
+//        end   
+//     end
+//     endtask
         
-        task Dump_DataMem; begin
+        task Dump_DataMem; 
+        begin
         $timeformat(-9, 1, " ns", 9);
         $display(" "); 
         $display("********************************************************************************************");
@@ -67,7 +68,7 @@ module Datapath_tb();
             end
         $display(" ");     
         $display("Final Values:");
-        for(i = 20; i < 37; i = i + 4) begin
+        for(i = 20; i < 33; i = i + 4) begin
             @(posedge clock)
             $display("t = %t DataAddress = [%0d]: %h%h%h%h", $time, i, uut.dm.dmem[i], uut.dm.dmem[i + 1], uut.dm.dmem[i + 2], uut.dm.dmem[i + 3]);
             end
@@ -82,10 +83,10 @@ module Datapath_tb();
         Reset = 1;
         #20 
         Reset = 0;
-        #600
-        Reset = 1;
+        #920
+//        Reset = 1;
  
-        Dump_RegFile;
+//        Dump_RegFile;
         Dump_DataMem;
         $finish;
        
