@@ -59,7 +59,7 @@ module Datapath(
     wire [31:0] Jump_Mux;
     
      // ASSIGN NEW WIRE FROM LAB 6
-    assign jumpAddr = {PC_Add_Out[31:28], Inst[25:0], 2'b0};
+    assign jumpAddr = {PC_Add_Out[31:28], Inst[25:0] << 2, 2'b0};
     
     // NEW MUX FROM LAB 6
     assign Jump_Mux = (jump) ? jumpAddr : Branch_Mux;
@@ -142,5 +142,13 @@ module Datapath(
                 .addr(ALU_Out),
                 .wr_data(T),
                 .rd_data(DataMem_Out)   
+                           
     );    
+    
+    
+    ShiftLeftTwo_2 sl3(
+                .Inst(Inst[25:0]),
+                .jumpAddr(jumpAddr)
+                
+    );            
 endmodule        
