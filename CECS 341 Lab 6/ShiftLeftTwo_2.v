@@ -21,11 +21,11 @@
 
 //fix code
 
-//module ShiftLeftTwo_2(
-//    input [25:0] Inst, 
-//    output [31:0] JISL
-//);
+module ShiftLeftTwo_2(
+    input [25:0] Inst, 
+    output [31:0] JISL
+);
 
-//    assign JISL = Inst << 2; //little circle thing
+    assign JISL = Inst << 2; //little circle thing
 
-//endmodule
+endmodule

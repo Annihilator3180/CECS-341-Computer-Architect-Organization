@@ -152,10 +152,10 @@ module Datapath(
     );    
     
     
-//    ShiftLeftTwo_2 sl3(
-//                .Inst(Inst[25:0]),
-//                .JISL(JISL) //little circle thing
+    ShiftLeftTwo_2 sl3(
+                .Inst(Inst[25:0]),
+                .JISL(JISL) 
 
                 
-//    );            
+    );            
 endmodule        
