@@ -212,6 +212,7 @@ module control(
                           MemToReg = 1'b0;
                           MemWrite = 1'b0;
                           ALUSrc   = 1'b0;
+                          jump = 1'bx;
                           
                          end
             endcase

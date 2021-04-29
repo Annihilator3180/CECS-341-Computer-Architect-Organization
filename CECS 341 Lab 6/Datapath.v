@@ -154,8 +154,7 @@ module Datapath(
     
     ShiftLeftTwo_2 sl3(
                 .Inst(Inst[25:0]),
-                .JISL(JISL) 
-
-                
-    );            
+                .JISL(JISL)          
+    );    
+            
 endmodule        
